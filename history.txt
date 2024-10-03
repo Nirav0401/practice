@@ -1,0 +1,65 @@
+
+    4  ssh-keygen
+    5  cd /c/Users/Nirav736/.ssh/id_rsa
+    6  cd /c/Users/Nirav736/.ssh/
+    8  cat id_rsa
+    9  cat id_rsa.pub 
+   17  git init
+   18  git add README.md
+   19  git commit -m "first commit"
+   20  git branch -M main
+   21  git remote add origin https://github.com/Nirav0401/Embedded_ESP32_repo.git
+   22  git push -u origin main
+   24  git add .
+   25  git status
+   33  git add .
+   53  git push --force
+   54  git help
+   55  git push -u origin https://github.com/Nirav0401/ADL400_Energy_Meter.git -f
+   56  git branch -M master
+   63  git remote -v
+   68  git remote remove origin
+   70  git branch -M main
+  185   rm -rf .git/
+  214  git log
+  217  touch .gitignore
+  219  git rm --cached Nirav/abc2.txt 
+  221  git add .gitignore 
+  226  git diff --staged
+  228  git mv Nirav/abc.txt Nirav/bcd.txt
+  231  git mv auth.txt Auth.txt
+  233  cat Auth.txt 
+  237  git add --a
+  239  touch second.txt
+  242  git commit -a -m "files updated"
+  244  git add .
+  248  git status
+  250  git log -p -1
+  252  git log -p -3
+  253  git checkout --f
+  255  git restore second.txt 
+  256  git log --pretty=short
+  257  git log --pretty=full
+  258  git log --pretty=oneline
+  259  git remote
+  260  git remote add origin https://github.com/Nirav0401/practice.git
+  262  git push --force origin
+  263  git push --force origin master
+  268  history
+  269  git diff --staged
+  275  git commit -a -m "second.txt modified"  276  git status
+  277  git log -p -5
+  278  git push origin master
+  280  git log --since=2.days
+  281  git log --since=2.weeks
+  284  git restore --staged second.txt --> will unstage the file
+  286  git add second.txt 
+  287  git restore --staged second.txt
+  289  git checkout -- second.txt
+  291  git alias-st status
+  292  git config --global alias.st status
+  293  git st
+  294  git config --global alias.unstage 'restore --staged --'
+  295  git unstage second.txt 
+  295 git commit --amend
+  296  history > history.txt
