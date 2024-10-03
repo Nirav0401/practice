@@ -1,0 +1,19 @@
+name: Run Script
+
+# Run this workflow on every push to the repository
+on: [push]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository (required)
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Step 2: Run the script to print digits from 1 to 10
+    - name: Run test.sh
+      run: |
+        chmod +x ./test.sh
+        ./test.sh
