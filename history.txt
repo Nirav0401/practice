@@ -35,7 +35,7 @@
   281  git log --since=2.weeks
   284  git restore --staged second.txt --> will unstage the file
   287  git restore --staged second.txt
-  289  git checkout -- second.txt
+  289  git checkout -- second.txt --> all the changes upto last commit will be removed
   291  git alias-st status
   292  git config --global alias.st status
   293  git st
@@ -43,3 +43,7 @@
   295  git unstage second.txt 
   295  git commit --amend
   296  history > history.txt
+  297  git checkout -b develop --> to create new branch
+  298  git checkout master --> to switch between two branches
+  299  git merge develop --> to merge the branch to branch in which you reside
+
