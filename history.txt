@@ -41,8 +41,7 @@
   293  git st
   294  git config --global alias.unstage 'restore --staged --'
   295  git unstage second.txt 
-  295  git commit --amend
-  296  history > history.txt
+  296  git commit --amend
   297  git checkout -b develop --> to create new branch
   298  git checkout master --> to switch between two branches
   299  git merge develop --> to merge the branch to branch in which you reside
