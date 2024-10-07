@@ -54,13 +54,6 @@
             	regulator-always-on;
 	};
 
-	reg_gpio_wifi: regulator@2 {
-            	compatible = "regulator-fixed";
-            	regulator-name = "wifi-pwr";
-           	regulator-min-microvolt = <3300000>;
-            	regulator-max-microvolt = <3300000>;
- 	};
-
 	reg_sd1_vmmc: regulator-sd1-vmmc {
 		compatible = "regulator-fixed";
 		regulator-name = "VSD_3V3";
@@ -161,6 +154,7 @@
     status = "okay";
 };
 
+echo "hardik"
 &i2c2 {
 	clock-frequency = <100000>;
 	pinctrl-names = "default";
@@ -190,6 +184,7 @@
 	status = "okay";
 };
 
+echo "akshar"
 &fec2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_enet2>;
@@ -234,6 +229,7 @@
 	status = "okay";
 };
 
+echo "mayank"
 &i2c1 {
 	clock-frequency = <100000>;
 	pinctrl-names = "default";
@@ -270,6 +266,7 @@
 	status = "okay";
 };
 
+echo "roshan"
 &qspi {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_qspi>;
@@ -284,17 +281,6 @@
 		spi-tx-bus-width = <1>;
 		reg = <0>;
 	};
-};
-
-&sai2 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_sai2>;
-	assigned-clocks = <&clks IMX6UL_CLK_SAI2_SEL>,
-			  <&clks IMX6UL_CLK_SAI2>;
-	assigned-clock-parents = <&clks IMX6UL_CLK_PLL4_AUDIO_DIV>;
-	assigned-clock-rates = <0>, <12288000>;
-	fsl,sai-mclk-direction-output;
-	status = "okay";
 };
 
 &snvs_poweroff {
