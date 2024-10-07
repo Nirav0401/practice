@@ -153,17 +153,6 @@
 	assigned-clock-rates = <786432000>;
 };
 
-
-/* &csi {
-	status = "disabled";
-
-	port {
-		csi1_ep: endpoint {
-			remote-endpoint = <&ov5640_ep>;
-		};
-	};
-}; */
-
 &adc1 {
     pinctrl-names = "default";
     pinctrl-0 = <&pinctrl_adc1>;
@@ -188,40 +177,6 @@
 		clocks = <&clks IMX6UL_CLK_SAI2>;
 		clock-names = "mclk";
 	};
-
-
-/*	ft5x06: ft5x06@38 {
-            compatible = "edt,edt-ft5406", "edt,edt-ft5x06";
-            reg = <0x38>;
-            pinctrl-names = "default";
-            pinctrl-0 = <&edt_ft5x06_pins>;
-            interrupt-parent = <&gpio1>;
-            interrupts = <5 IRQ_TYPE_EDGE_FALLING>;
-            reset-gpios = <&gpio5 2  GPIO_ACTIVE_LOW>;
-            touchscreen-size-x=<800>;
-            touchscreen-size-y=<480>;
-    	};
-    	
-	ov5640: ov5640@3c {
-		compatible = "ovti,ov5640";
-		reg = <0x3c>;
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_csi1 &pinctrl_camera_clock>;
-		clocks = <&clks IMX6UL_CLK_CSI>;
-		clock-names = "csi_mclk";
-		pwn-gpios = <&gpio_spi 6 1>;
-		rst-gpios = <&gpio_spi 5 0>;
-		csi_id = <0>;
-		mclk = <24000000>;
-		mclk_source = <0>;
-		status = "disabled";
-		port {
-			ov5640_ep: endpoint {
-				remote-endpoint = <&csi1_ep>;
-			};
-		};
-	}; */
-
 };
 
 &fec1 {
@@ -398,6 +353,8 @@
 	status = "okay";
 };
 
+echo "Hello"
+
 &usbotg2 {
 	dr_mode = "host";
 	disable-over-current;
@@ -548,7 +505,7 @@
 			MX6UL_PAD_NAND_DQS__QSPI_A_SS0_B	0x70a1
 		>;
 	};
-
+echo "World!"
 	pinctrl_sai2: sai2grp {
 		fsl,pins = <
 			/*MX6UL_PAD_JTAG_TDI__SAI2_TX_BCLK	0x17088*/
