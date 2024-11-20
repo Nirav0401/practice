@@ -51,3 +51,4 @@
   303  git branch --merged --> all merged branches
   304  git branch --no-merged --> nommerged branches
   305  git branch -v --> all info about branches
+  306  git log origin/master..master --> will show you all the changes between local and remote branch
