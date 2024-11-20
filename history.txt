@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
    17  git init
    18  git add README.md
@@ -51,3 +52,59 @@
   303  git branch --merged --> all merged branches
   304  git branch --no-merged --> nommerged branches
   305  git branch -v --> all info about branches
+=======
+
+   17  git init
+   18  git add README.md
+   19  git commit -m "first commit"
+   21  git remote add origin https://github.com/Nirav0401/Embedded_ESP32_repo.git
+   22  git push -u origin main
+   53  git push --force
+   55  git push -u origin https://github.com/Nirav0401/ADL400_Energy_Meter.git -f
+   56  git branch -M master
+   63  git remote -v
+   68  git remote remove origin
+  185  rm -rf .git/ --> to make the directory untracked from git access
+  214  git log
+  219  git rm --cached Nirav/abc2.txt 
+  221  git add .gitignore 
+  226  git diff --staged
+  228  git mv Nirav/abc.txt Nirav/bcd.txt
+  231  git mv auth.txt Auth.txt
+  237  git add --a
+  244  git add .
+  250  git log -p -1
+  252  git log -p -3
+  253  git checkout --f
+  255  git restore second.txt 
+  256  git log --pretty=short
+  257  git log --pretty=full
+  258  git log --pretty=oneline
+  259  git remote
+  260  git remote add origin https://github.com/Nirav0401/practice.git
+  263  git push --force origin master
+  269  git diff --staged
+  275  git commit -a -m "second.txt modified" 
+  277  git log -p -5
+  280  git log --since=2.days
+  281  git log --since=2.weeks
+  284  git restore --staged second.txt --> will unstage the file
+  287  git restore --staged second.txt
+  289  git checkout -- second.txt --> all the changes upto last commit will be removed
+  291  git alias-st status
+  292  git config --global alias.st status
+  293  git st
+  294  git config --global alias.unstage 'restore --staged --'
+  295  git unstage second.txt 
+  296  git commit --amend
+  297  git checkout -b develop --> to create new branch
+  298  git checkout master --> to switch between two branches
+  299  git merge develop --> to merge the branch to branch in which you reside
+  300  git reset --hard <commit-hash> -->> This will reset your branch to the previous state, effectively removing the merge and discarding any changes.
+  301  git revert -m 1 <merge-commit-hash> -->> If you want to undo the merge but keep the history
+  302  git reset --soft <commit-hash> -->> If you want to undo the merge but keep the changes in your working directory:
+  303  git branch --merged --> all merged branches
+  304  git branch --no-merged --> nommerged branches
+  305  git branch -v --> all info about branches
+  306  git log origin/master..master --> will show you all the changes between local and remote branch
+>>>>>>> 0e215d28b66a4c0d9e832f73b7a2b617507d9360

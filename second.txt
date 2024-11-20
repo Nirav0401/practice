@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "Rise with purpose, shine with energy!"
 “Every morning brings new potential, but it's what we do with it that makes a difference.”
 Deep Patel
@@ -10,3 +11,7 @@ Foram Modi
 Smit Patel
 Nikunj Patel
 Akshar Patel
+=======
+"Rise with purpose, shine with energy!"
+“Every morning brings new potential, but it's what we do with it that makes a difference.”
+>>>>>>> 0e215d28b66a4c0d9e832f73b7a2b617507d9360
