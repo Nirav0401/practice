@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    17  git init
    18  git add README.md
@@ -53,6 +54,8 @@
   304  git branch --no-merged --> nommerged branches
   305  git branch -v --> all info about branches
 =======
+=======
+>>>>>>> parent of 6de0ac7 (added slogan)
 
    17  git init
    18  git add README.md
@@ -106,5 +109,8 @@
   303  git branch --merged --> all merged branches
   304  git branch --no-merged --> nommerged branches
   305  git branch -v --> all info about branches
+<<<<<<< HEAD
   306  git log origin/master..master --> will show you all the changes between local and remote branch
 >>>>>>> 0e215d28b66a4c0d9e832f73b7a2b617507d9360
+=======
+>>>>>>> parent of 6de0ac7 (added slogan)
